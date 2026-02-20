@@ -1,0 +1,10 @@
+feature/page ideas:
+  game page
+  project page
+  showoff page
+  current arch page
+  journaling page
+
+bug/minor fixes:
+  remove the poem thing
+  make base style for a button
