@@ -1,19 +1,13 @@
 h1{
-  font-family: "Nabla", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "EDPT" 100,
-    "EHLT" 12;
+  font-weight: bold;
 }
 
-
-.spinnyTitle{
-  transition:ease-in-out 0.5s;
-  display:inline-block;
+.horrorImage{
+  height: 100px;
+  transition:linear 2s;
+  opacity: 0;
 }
 
-.spinnyTitle:hover{
-  rotate: y 720deg;
+.horrorImage:hover{
+  opacity: 1;
 }

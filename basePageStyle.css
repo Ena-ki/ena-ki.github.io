@@ -3,3 +3,19 @@ body {
   color: #575279;
   font-family: ui-sans-serif,system-ui,sans-serif;
 }
+
+.hBoxContainter{
+  display: flex;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+}
+
+.middleSection{
+  display: flex;
+  width: 75%;
+  gap: 10px;
+  flex-direction: column;
+}
