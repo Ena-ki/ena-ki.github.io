@@ -1,0 +1,77 @@
+body {
+  background-color: #fffaf3;
+  color: #575279;
+  font-size: 24px;
+  font-family: ui-sans-serif,system-ui,sans-serif;
+  padding-bottom: 300px;
+}
+
+
+p{
+  white-space: pre-wrap;
+}
+
+a{
+  text-decoration-line: none;
+  color : #56949f;
+}
+
+
+
+a:active{
+  color : #286983;
+}
+
+.aButt{
+  color : #575279;
+  border : 3px solid;
+  border-radius: 12px;
+  width : fit-content;
+  cursor: pointer;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+
+  transition : cubic-bezier(0,.73,.15,1) 1s;
+}
+
+
+.aButt:hover{
+  color : #d7827e;
+  transform:scale(1.2);
+
+}
+
+
+.smallMargin{
+  margin-top : 12px;
+  margin-bottom: 12px;
+}
+
+.bigMargin{
+  margin-top : 36px;
+  margin-bottom: 36px;
+}
+
+.centered{
+  justify-content: center;
+  align-items: center;
+}
+
+.hBoxContainter{
+  display: flex;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+}
+
+.middleSection{
+  display: flex;
+  width: 75%;
+  gap: 10px;
+  flex-direction: column;
+}

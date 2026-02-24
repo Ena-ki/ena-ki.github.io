@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I'm yes</title>
-    <link href="./basePageStyle.css" rel="stylesheet">
-    <link href="./basic.css" rel="stylesheet">
+    <link href="./basicCss/basePageStyle.css" rel="stylesheet">
   </head>
 
 
@@ -14,9 +13,8 @@
     <div class="parent">
       <div class="middleSection">
 
-        <div class="hBoxContainter">
-          <h1> HeLLo, I'm Ena</h1>
-          <img class="horrorImage" src="./unimaginable horror.webp" alt="">
+        <div class="hBoxContainter centered">
+          <h1> Hello, I'm Ena</h1>
         </div>
 
         <p> This is a site that I made for reasons unknown to mankind </p>
@@ -24,14 +22,24 @@
         <p> For now you can look at the frog </p>
 
         <div>
-          <img src="./frog.webp" alt="no">
+          <img src="./index/frog.webp" alt="no" class="bigMargin">
         </div>
-        <a href="./javascriptDislike/javascriptDislike.html">A poem I wrote on JavaScript</a>
+        <p>A cool button!   -&gt <a class="aButt" id="chickenButt">click me!</a> &lt-  </p>
         <a href="./aknowledgements/aknowledgements.html"> Aknowledgements</a>
-        <p>Last Update : 2/20/2026</p>
+
+
+
+        <p>Last Update : 2/25/2026</p>
 
       </div>
     </div>
+
+    <script>
+      const chickenButt = document.getElementById("chickenButt")
+      chickenButt.addEventListener('click', function(event){
+        alert("chicken butt");
+      })
+    </script>
   </body>
 
 </html>
