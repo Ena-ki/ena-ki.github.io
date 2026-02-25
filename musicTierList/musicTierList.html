@@ -22,11 +22,11 @@
         <div class="centered">
           <p class="title">Miniseries 2</p>
           <p class="subtitle" style="margin-top:-40px">Sumin, Slom</p>
-          <div class="horizontalDiv">
+          <div class="horizontalDiv" style="align-items: flex-start;">
             <img src="./covers/miniseries2.jpg" alt="miniseries2" class="bigImage">
 
             <div class="verticalDiv">
-              <button class="aButt expandButt" id="miniseries2">expand</button>
+              <button class="aButt dropdown" style="width: 100%;">expand</button>
               <p style="white-space: normal;" class="hidden noMargin">
                 This album was the first(?) R&ampB album I've listened to and it is GOOD.
                 The vocals definitely take the spotlight on this one.
@@ -35,19 +35,67 @@
                 my favorite song is 진짜 안녕.
               </p>
             </div>
-
           </div>
-          <p></p>
         </div>
 
         <hr>
+
+        <div class="centered">
+          <p class="title">We had good times together, don't forget that</p>
+          <p class="subtitle" style="margin-top:-40px">Sewerslvt</p>
+          <div class="horizontalDiv" style="align-items: flex-start;">
+            <img src="./covers/we-had-good-times-together.jpg" alt="miniseries2" class="bigImage">
+
+          </div>
+          <div class="verticalDiv smallMargin">
+            <button class="aButt dropdown" style="width: 100%;">expand</button>
+            <p style="white-space: normal;" class="hidden noMargin">
+            This album is the definition of 
+            "when you're happy you listen to the music, but when you're sad you listen to the lyrics"
+            , except there is no lyrics and you're sad always. <br>
+            So the backstory of this album is that the author lost their lover to suicide and made this album in commemoration.
+            You can definitely feel the emotions sewerslvt tried to put in each track.
+            I feel like the earth moves beneath my feet and the time passes too fast for me to do something about it when I listen to this album.
+            It feels like being lost in a maze you know there is no exit in. <br>
+            Definitely the album that made me love Drum and Bass genre.
+            My favorite tracks are probably "dissociating" or "all the joy in life was gone once you left", but I also cried when I first listened to "blissful overdose"
+            If you wanted to get into Drum and Bass this might be a great start.
+            </p>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="centered">
+          <p class="title">Crumbling (무너지기)</p>
+          <p class="subtitle" style="margin-top:-40px">Mid-Air Thief (공중도둑)</p>
+          <div class="horizontalDiv" style="align-items: flex-start;">
+            <img src="./covers/crumbling.jpg" alt="Crumbling Cover" class="bigImage">
+            <div class="verticalDiv">
+              <button class="aButt dropdown" style="width: 100%;">expand</button>
+              <p style="white-space: normal;" class="hidden noMargin">
+              Good album &#128077 <br>
+              Very calm vibes and beautiful melodies. <br>
+              fav song is "These Chains (쇠사스)". This song sounds so clean and clear, but so full and complicated.
+              Like this album contains the most beautiful sounds made by humanity, GO LISTEN TO IT.
+
+
+              </p>
+            </div>
+
+          </div>
+        </div>
 
       </div>
     </div>
 
     <script>
-      const miniseriesButton = document.getElementById("miniseries2");
-      miniseriesButton.addEventListener("click", onExpandClick);
+      const dropdownButtons = document.getElementsByClassName("dropdown");
+
+      for(let i=0; i<dropdownButtons.length; i++)
+      {
+        dropdownButtons[i].addEventListener("click", onExpandClick);
+      }
 
       function onExpandClick(event){
         this.classList.toggle("active");
