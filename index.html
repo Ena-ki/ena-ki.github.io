@@ -15,42 +15,54 @@
       <div class="middleSection">
 
         <div class="centered">
-          <h1> Hello, I'm Ena</h1>
+          <h1 class="smallMargin"> Hello, I'm Ena</h1>
+          <p class="noMargin subtitle"> This is a site that I made for reasons unknown to mankind </p>
         </div>
 
-        <p class="smallMargin"> This is a site that I made for reasons unknown to mankind </p>
+        <hr>
 
-        <p> News: I made a cool button!</p>
-        
-        <p></p>
+        <div class="buttContainer bigMargin">
+          <p class="smallTitle"><span style="font-weight:bold;">News:</span> I made a cool button!</p>
+          <p>A cool button! -&gt   <a class="aButt" id="chickenButt">click me!</a>   &lt-  </p>
+        </div>
 
 
-        <div class="bigMargin centered">
-          <div>
-            <a class="aButt" href="./frog/frog.html">frog</a>
-            <a class="aButt" href="./frog/frog.html">frog</a>
-            <a class="aButt" href="./frog/frog.html">frog</a>
-            <a class="aButt" href="./frog/frog.html">frog</a>
+        <div class="horizontalDiv centered" style="align-items: stretch;">
+          <div class="verticalDiv centered fitContent buttContainer">
+            <p class="smallMargin">frog</p>
+            <div class="horizontalDiv smallMargin fitContent">
+              <a class="aButt" href="./frog/frog.html">frog</a>
+              <a class="aButt" href="./frog/frog.html">frog</a>
+              <a class="aButt" href="./frog/frog.html">frog</a>
+              <a class="aButt" href="./frog/frog.html">frog</a>
+            </div>
           </div>
+
+          <button class="aButt expandButt" id="anotherChickyButt"> click me! </button>
         </div>
-
-
-        <p>A cool button! -&gt   <a class="aButt" id="chickenButt">click me!</a>   &lt-  </p>
-        
-        <p></p>
 
         <a href="./aknowledgements/aknowledgements.html"> Aknowledgements</a>
 
-        <p>Last Update : 2/25/2026</p>
+        <p>Last Update : 2/26/2026</p>
 
       </div>
     </div>
 
     <script>
       const chickenButt = document.getElementById("chickenButt")
-      chickenButt.addEventListener('click', function(event){
+      const anotherChickyButt = document.getElementById("anotherChickyButt")
+
+      chickenButt.addEventListener('click', chickenButtAlert)
+      anotherChickyButt.addEventListener('click', chickenButtAlertAgain)
+
+      function chickenButtAlert(){
         alert("chicken butt");
-      })
+      }
+
+      function chickenButtAlertAgain(){
+        alert("chicken butt again!!!");
+      }
+
     </script>
   </body>
 

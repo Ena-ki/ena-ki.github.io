@@ -49,7 +49,7 @@
       const miniseriesButton = document.getElementById("miniseries2");
       miniseriesButton.addEventListener("click", onExpandClick);
 
-      function onExpandClick(){
+      function onExpandClick(event){
         this.classList.toggle("active");
 
         var content = this.nextElementSibling;

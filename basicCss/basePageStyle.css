@@ -21,9 +21,10 @@ a:active{
 
 hr {
   border: 0;
-  height: 1px;
+  height: 2px;
   background-color: #575279;
   margin: 20px 0;
+  border-radius: 3px;
 }
 
 .parent{
