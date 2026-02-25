@@ -19,6 +19,12 @@ a:active{
   color : #286983;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #575279;
+  margin: 20px 0;
+}
 
 .parent{
   display: flex;

@@ -3,7 +3,6 @@
   color : #575279;
   border : 3px solid;
   border-radius: 12px;
-  width : fit-content;
   cursor: pointer;
   padding-bottom: 6px;
   padding-top: 6px;
@@ -21,10 +20,20 @@
   transform:scale(1.2);
 }
 
+.expandButt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .smallMargin{
   margin-top : 12px;
   margin-bottom: 12px;
+}
+
+.noMargin{
+  margin-top : 0px;
+  margin-bottom: 0px;
 }
 
 .bigMargin{
@@ -36,18 +45,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.horizontalDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.verticalDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.hidden{
+  display: none;
 }
 
 .bigImage{
-  max-width: 100%;
+  max-width: 90%;
   display: block;
 }
 
+.title{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.subtitle{
+  font-size: 18px;
+  font-weight: 300;
+}
 
 @media (min-width: 768px){
   .bigImage{
     height: auto;
-    max-width: 80%;
+    max-width: 60%;
     display: block;
   }
 }

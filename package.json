@@ -1,0 +1,23 @@
+{
+  "name": "webgarden",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/Ena-ki/ena-ki.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/Ena-ki/ena-ki.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ena-ki/ena-ki.github.io.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "marked": "^17.0.3"
+  }
+}
