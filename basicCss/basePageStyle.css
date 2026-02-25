@@ -6,6 +6,17 @@ body {
   padding-bottom: 300px;
 }
 
+@media (max-width: 768px){
+  body{
+    padding-top: 50px;
+    font-size: 16px;
+  }
+
+  div {
+    flex-wrap: wrap;
+  }
+}
+
 p{
   white-space: pre-wrap;
 }
@@ -21,10 +32,10 @@ a:active{
 
 hr {
   border: 0;
-  height: 2px;
+  height: 1px;
   background-color: #575279;
-  margin: 20px 0;
-  border-radius: 3px;
+  margin: 20px;
+  border-radius: 2px;
 }
 
 .parent{
@@ -36,14 +47,11 @@ hr {
   display: flex;
   gap: 10px;
   flex-direction: column;
+  width: 65%;
 }
 
-
-@media (min-width: 768px){
-  body{
-    padding-top: 50px;
-  }
+@media (max-width: 768px){
   .middleSection{
-    width: 65%;
+    width: 100%;
   }
 }
